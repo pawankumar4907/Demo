@@ -1,0 +1,31 @@
+Install git
+then open path where you would like to keep your Project like
+F:\Project
+
+****Remember***:
+1. One branch can be associate with one Pull request so create seperate branch for one feature.
+2. for every defect fix or feature create new branch and Pull for it.
+ 
+
+****Git Commands*****
+run below command on path where you would like to keep your Project
+git init   : It will add .git hidden file which will support to manage your git commands
+git config --global user.name “[firstname lastname]” : set a name that is identifiable for credit when review version history
+git config --global user.email “[valid-email]”       :set an email address that will be associated with each history marker
+
+git push origin <Branch name> -f
+
+
+##Create a new repository on the command line
+
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:alexpchin/<reponame>.git
+git push -u origin master
+
+##Push an existing repository from the command line
+
+git remote add origin git@github.com:alexpchin/<reponame>.git
+git push -u origin master
